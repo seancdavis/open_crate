@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: open_crate_development
+
+test:
+  <<: *default
+  database: open_crate_test
+
+production:
+  <<: *default
+  database: open_crate_production
+  username: open_crate
+  password: <%= ENV['DATABASE_PASSWORD'] %>
