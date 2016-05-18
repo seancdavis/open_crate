@@ -9,6 +9,8 @@ gem 'pg', '~> 0.15'
 # ---------------------------------------- Assets
 
 gem 'sass-rails', '~> 5.0'
+gem 'bootstrap', '~> 4.0.0.alpha3'
+gem 'sprockets-rails', '>= 2.3.2'
 
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
