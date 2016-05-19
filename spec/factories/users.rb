@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: models
+# Table name: users
 #
 #  id                     :integer          not null, primary key
 #  email                  :string           default(""), not null
@@ -13,13 +13,12 @@
 #  last_sign_in_at        :datetime
 #  current_sign_in_ip     :inet
 #  last_sign_in_ip        :inet
-#  User                   :string
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
 #
 
 FactoryGirl.define do
-  factory :model do
+  factory :user do
     
   end
 end

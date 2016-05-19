@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: models
+# Table name: users
 #
 #  id                     :integer          not null, primary key
 #  email                  :string           default(""), not null
@@ -13,14 +13,15 @@
 #  last_sign_in_at        :datetime
 #  current_sign_in_ip     :inet
 #  last_sign_in_ip        :inet
-#  User                   :string
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
 #
 
-class Model < ActiveRecord::Base
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable
+class User < ActiveRecord::Base
+
+  # ---------------------------------------- Plugins
+
+  devise :database_authenticatable, :recoverable, :rememberable, :trackable,
+         :validatable
+
 end

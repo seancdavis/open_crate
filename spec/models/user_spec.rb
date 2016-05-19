@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: models
+# Table name: users
 #
 #  id                     :integer          not null, primary key
 #  email                  :string           default(""), not null
@@ -13,13 +13,12 @@
 #  last_sign_in_at        :datetime
 #  current_sign_in_ip     :inet
 #  last_sign_in_ip        :inet
-#  User                   :string
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
 #
 
 require 'rails_helper'
 
-RSpec.describe Model, type: :model do
+RSpec.describe User, type: :model do
   pending "add some examples to (or delete) #{__FILE__}"
 end
