@@ -6,6 +6,7 @@ class CreateTransactions < ActiveRecord::Migration
       t.text :description
       t.money :amount
       t.string :attachment
+      t.string :type
 
       t.timestamps null: false
     end
