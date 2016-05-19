@@ -19,6 +19,8 @@ gem 'jquery-rails'
 # ---------------------------------------- Utilies
 
 gem 'devise'
+gem 'money-rails'
+gem 'carrierwave'
 
 # ---------------------------------------- View Helpers
 
