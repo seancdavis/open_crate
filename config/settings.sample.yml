@@ -1,0 +1,10 @@
+development: &default
+  tax_withholding: 0.5
+  starting_balance: 1000.00
+  minimum_balance: 5000.00
+
+test:
+  <<: *default
+
+production:
+  <<: *default
