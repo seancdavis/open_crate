@@ -1,0 +1,18 @@
+<%= simple_form_for @transaction do |f| %>
+  <%= f.error_notification %>
+
+  <%= f.input :date, :as => :string,
+              :input_html => { :class => 'datepicker' } %>
+  <%= f.input :source %>
+  <div class="input">
+    <label>Amount</label>
+    <div class="input-group">
+      <div class="input-group-addon">$</div>
+      <%= f.input :amount, :as => :decimal, :wrapper => false,
+                  :label => false %>
+    </div>
+  </div>
+
+  <br>
+  <%= f.button :submit %>
+<% end %>

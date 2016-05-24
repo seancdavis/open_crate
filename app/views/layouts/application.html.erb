@@ -8,9 +8,12 @@
   </head>
   <body>
 
-    <%= render 'status' %>
+    <%= render 'nav' if user_signed_in? %>
 
-    <%= yield %>
+    <div class="main container">
+      <%= render 'status' %>
+      <%= yield %>
+    </div>
 
   </body>
 </html>

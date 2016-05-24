@@ -20,11 +20,12 @@ ActiveRecord::Schema.define(version: 20160519011830) do
     t.date     "date"
     t.string   "source"
     t.text     "description"
-    t.money    "amount",      scale: 2
+    t.integer  "amount_cents",    default: 0,     null: false
+    t.string   "amount_currency", default: "USD", null: false
     t.string   "attachment"
     t.string   "type"
-    t.datetime "created_at",            null: false
-    t.datetime "updated_at",            null: false
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
   end
 
   create_table "users", force: :cascade do |t|

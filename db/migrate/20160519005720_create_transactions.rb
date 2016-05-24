@@ -4,7 +4,7 @@ class CreateTransactions < ActiveRecord::Migration
       t.date :date
       t.string :source
       t.text :description
-      t.money :amount
+      t.monetize :amount
       t.string :attachment
       t.string :type
 

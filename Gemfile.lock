@@ -100,6 +100,8 @@ GEM
     faker (1.6.3)
       i18n (~> 0.5)
     ffi (1.9.10)
+    font-awesome-rails (4.6.3.0)
+      railties (>= 3.2, < 5.1)
     formatador (0.2.5)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
@@ -166,6 +168,8 @@ GEM
     orm_adapter (0.5.0)
     paint (1.0.1)
     pg (0.18.4)
+    pickadate-rails (3.5.6.0)
+      railties (>= 3.1.0)
     poltergeist (1.9.0)
       capybara (~> 2.1)
       cliver (~> 0.3.1)
@@ -293,12 +297,14 @@ DEPENDENCIES
   devise
   factory_girl_rails
   faker
+  font-awesome-rails
   guard-rspec
   hirb
   jbuilder (~> 2.0)
   jquery-rails
   money-rails
   pg (~> 0.15)
+  pickadate-rails
   poltergeist
   rails (= 4.2.6)
   rails-console-tweaks

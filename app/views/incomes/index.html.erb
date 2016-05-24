@@ -1,0 +1,23 @@
+<div class="page-title">
+  <h1>
+    Income
+    <a href="<%= new_income_path %>" class="btn btn-sm">
+      <%= fa_icon 'plus', :text => 'New Income' %>
+    </a>
+  </h1>
+</div>
+
+<div class="content">
+  <% if @transactions.present? %>
+    <table class="table">
+      <thead>
+        <th>Date</th>
+        <th>Source</th>
+        <th>Amount</tr>
+      </thead>
+      <tbody>
+        <%= render @transactions %>
+      </tbody>
+    </table>
+  <% end %>
+</div>

@@ -1,6 +1,15 @@
 
 $enable-rounded: false;
 
-@import "bootstrap";
+@import 'bootstrap';
+@import 'pickadate/default';
+@import 'pickadate/default.date';
+@import 'font-awesome';
 
+.container.main {
+  margin-top: 80px;
+}
 
+.content {
+  margin-top: 25px;
+}
